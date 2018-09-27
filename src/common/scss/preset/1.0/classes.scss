@@ -1,0 +1,63 @@
+/* 用来隐藏一些初始化前的Vue元素 */
+[v-cloak] { display: none; }
+
+/* 清浮动 */
+.g-clearfix:after {
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: '.';
+}
+
+/* 两端对齐 */
+.g-justify-align {
+	text-align: justify;
+	font-size: 0;
+}
+.g-justify-align:after {
+	width: 100%;
+	height: 0;
+	margin: 0;
+	display: inline-block;
+	overflow: hidden;
+	content: '';
+}
+.g-justify-align>* {
+	vertical-align: top;
+	display: inline-block;
+}
+
+
+/* 单行文本，如有超出则以省略号结尾 */
+.g-singleline-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* 垂直居中 */
+.g-valign-mid {
+	vertical-align: middle;
+}
+
+
+/* 图标 */
+.g-icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 动画过渡 */
+.g-fade-enter-active,
+.g-fade-leave-active {
+  transition: opacity .3s
+}
+
+.g-fade-enter,
+.g-fade-leave-active {
+	opacity: 0;
+}

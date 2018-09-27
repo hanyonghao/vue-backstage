@@ -1,0 +1,103 @@
+/* 可点击 */
+.g-click {
+	cursor: pointer !important;
+	transition: opacity 0.3s !important;
+	&:hover {
+		opacity: 0.86 !important;
+	}
+}
+
+
+/* 通用按钮 */
+.g-button {
+	width: 106px;
+	height: 32px;
+	border: 0 !important;
+	border-radius: 2px;
+	background: #ffcf27 !important;
+	cursor: pointer !important;
+	transition: background 0.3s;
+	font-size: 13px;
+	text-align: center;
+	color: #333 !important;
+	&:hover {
+		background: rgba(255, 207, 39, 0.86) !important;
+	}
+}
+
+
+.g-handle {
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	i {
+		margin-right: 2px;
+		vertical-align: middle;
+		color: #333;
+	}
+	.group {
+		height: 32px;
+		display: inline-block;
+		margin-right: 15px;
+		white-space: nowrap;
+		vertical-align: top;
+		.label {
+			font-size: 14px;
+			color: #333;
+		}
+		.item {
+			width: 160px;
+			height: 100%;
+			padding: 0 5px;
+			box-sizing: border-box;
+			display: inline-block;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+	}
+	button {
+		vertical-align: top;
+	}
+}
+
+
+.g-form {
+	.group {
+		margin-top: 20px;
+		padding-bottom: 10px;
+		.label {
+			line-height: 16px;
+			font-size: 14px;
+			color: #333;
+			&.red::before {
+				content: '*';
+				margin-right: 5px;
+				color: #FF5151;
+			}
+		}
+		.row {
+			margin-top: 15px;
+		}
+		.normal {
+			width: 400px;
+		}
+		.limit {
+			margin-left: 10px;
+			font-size: 14px;
+			color: #ccc;
+		}
+	}
+}
+
+
+.g-mr {
+	margin-right: 20px !important;
+}
+
+
+.g-ml {
+	margin-left: 20px !important;
+}
